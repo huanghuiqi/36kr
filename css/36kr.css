@@ -1,0 +1,659 @@
+
+/*导航条部分*/
+.kr36-default {
+    border-color: #e7e7e7;
+}
+.kr36-default .navbar-brand {
+    color: #777;
+}
+
+.kr36-default .navbar-brand{
+    width: 62px;
+    height: 60px;
+    padding: 14px 0px;
+    background: url('../images/logo.png') no-repeat center center;
+    display: block;
+    background-size: 60px 33px;
+}
+
+.kr36-default .navbar-brand:hover,
+.kr36-default .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+.kr36-default .navbar-text {
+    color: #777;
+}
+.kr36-default .navbar-nav > li > a {
+    color: #777;
+}
+.kr36-default .navbar-nav > li > a:hover,
+.kr36-default .navbar-nav > li > a:focus {
+    color: #333;
+    background-color: transparent;
+}
+.kr36-default .navbar-nav > .active > a,
+.kr36-default .navbar-nav > .active > a:hover,
+.kr36-default .navbar-nav > .active > a:focus {
+    color: #555;
+}
+.kr36-default .navbar-nav > .disabled > a,
+.kr36-default .navbar-nav > .disabled > a:hover,
+.kr36-default .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+.kr36-default .navbar-toggle {
+    border-color: #ddd;
+}
+.kr36-default .navbar-toggle:hover,
+.kr36-default .navbar-toggle:focus {
+    /*background-color: #ddd;*/
+}
+.kr36-default .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+.kr36-default .navbar-collapse,
+.kr36-default .navbar-form {
+    border-color: #e7e7e7;
+}
+.kr36-default .navbar-nav > .open > a,
+.kr36-default .navbar-nav > .open > a:hover,
+.kr36-default .navbar-nav > .open > a:focus {
+    color: #555;
+}
+@media (max-width: 767px) {
+    .kr36-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .kr36-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .kr36-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+        background-color: transparent;
+    }
+    .kr36-default .navbar-nav .open .dropdown-menu > .active > a,
+    .kr36-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .kr36-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #555;
+        /*background-color: #e7e7e7;*/
+    }
+    .kr36-default .navbar-nav .open .dropdown-menu > .disabled > a,
+    .kr36-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .kr36-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #ccc;
+        background-color: transparent;
+    }
+}
+.kr36-default .navbar-link {
+    color: #777;
+}
+.kr36-default .navbar-link:hover {
+    color: #333;
+}
+.kr36-default .btn-link {
+    color: #777;
+}
+.kr36-default .btn-link:hover,
+.kr36-default .btn-link:focus {
+    color: #333;
+}
+.kr36-default .btn-link[disabled]:hover,
+fieldset[disabled] .kr36-default .btn-link:hover,
+.kr36-default .btn-link[disabled]:focus,
+fieldset[disabled] .kr36-default .btn-link:focus {
+    color: #ccc;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
+    background-color: #fff;
+}
+
+.navbar{
+    min-height: 62px;
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    .kr36-default .navbar-nav li a{
+        padding-top:15px;
+        padding-bottom: 15px;
+        padding-left:5px;
+        padding-right: 5px;
+    }
+}
+
+.navbar-wrap{
+    padding: 0px 20px;
+    box-sizing: border-box;
+    }
+
+.kr36-default  .navbar-wrap-container {
+    max-width: 1140px;
+    margin: 0px auto;
+}
+
+.kr36-default .navbar-nav > li > a{
+    line-height: 30px;
+}
+
+.kr36-default .navbar-header{
+    position: relative;
+}
+
+.navbar-wrap .nav{
+    padding-left: 5px;
+}
+
+
+/*主体部分*/
+
+.main{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.main>.main_box{
+    width: 100%;
+    display: flex;
+}
+
+.main>.main_box>.main_left_box{
+    height: 800px;  /*要删除*/
+    /*background-color: darksalmon;*/
+    flex:1 1 auto;
+}
+
+.main>.main_box>.main_right_box{
+    width: 290px;
+    height: 800px;  /*要删除*/
+    flex: 0 0 290px;
+}
+
+.main_left_box .left_box_wrap{
+    margin-right: 10%;
+}
+
+@media (max-width: 767px){
+    .left_box_wrap{
+        width: 100%;
+    }
+}
+
+/*左边：新闻评论*/
+.editor_recommend{
+    margin-top: 20px;
+}
+
+.left_box_wrap .editor_recommend li{
+    width: 32%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    border-radius: 4px 4px 4px 4px;
+    margin-right: 2%;
+}
+
+.left_box_wrap .editor_recommend li:last-of-type{
+    margin-right: 0px;
+}
+
+.left_box_wrap .editor_recommend .space_cell{
+    padding-bottom: 60%;
+}
+
+.left_box_wrap .editor_recommend li a{
+    width: 100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+
+.left_box_wrap .editor_recommend li a img{
+    width: 100%;
+}
+
+.editor_recommend_info,
+.editor_recommend_info a,
+.editor_recommend_info a span{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+}
+
+.editor_recommend_info{
+    height: 100%;
+    line-height: 1.6;
+}
+
+.editor_recommend_info a span{
+    color: #fff;
+    font-family: "Microsoft yahei";
+    background: rgba(0, 0, 0, 0.34902);
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 5px 15px;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+/*左边：新闻列表*/
+/*滚屏时的活动导航栏*/
+.scroll-nav{
+    width: 100%;
+
+}
+.scroll-nav ul li{
+    float: left;
+}
+
+/*列表内容*/
+.news-list ul li{
+    border-bottom: 1px solid #ccc;
+    height: 16rem;
+    font-family: "Microsoft yahei";
+    padding-top:1.5rem ;
+    padding-bottom:1.5rem ;
+}
+
+.news-list ul li:last-of-type{
+    border-bottom: none;
+}
+
+.news-list ul li .innerli{
+    height: 100%;
+}
+
+.news-list li .innerli .img_box{
+    width: 22rem;
+    height: 13rem;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+
+.news-list li .innerli .img_box a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.news-list li .innerli .img_box span{
+    position: absolute;
+    top:0.8rem;
+    left:0.8rem;
+    font-size: 1rem;
+    width: 65px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+    border-radius: 12px 12px 12px 12px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.news-list li .innerli .img_box a img{
+    width: 100%;
+}
+
+.news-list li .innerli .intro{
+    width: 100%;
+    height: 100%;
+    padding-left: 24rem;
+    position: relative;
+}
+
+.news-list li .innerli .intro .title{
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: block;
+    max-height: 5rem;
+    overflow: hidden;
+    /*以下四行：限制在一个块元素显示的文本的行数。
+    **文本溢出显示省略号*/
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+}
+
+.news-list li .innerli .intro .title:hover{
+    color: rgb(85, 143, 245);
+}
+
+.news-list li .innerli .intro .title:visited,
+.news-list li .innerli .intro .title:active,
+.news-list li .innerli .intro .title:focus{
+    text-decoration: none;
+}
+
+.news-list li .innerli .intro .extra,
+.news-list li .innerli .intro .editor{
+    color: rgb(130, 138, 146);
+    line-height: 25px;
+}
+
+.news-list li .innerli .intro .editor{
+    position: absolute;
+    bottom:0px;
+    left:24rem
+}
+
+.news-list li .innerli .intro .editor a{
+    color:rgb(85, 143, 245);
+}
+
+.news-list .loadmore,
+.news_flash .loadmore{
+    display: block;
+    width: 14rem;
+    height: 4rem;
+    line-height: 4rem;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    margin: 2.5rem auto 0px;
+    border: 1px solid rgb(66, 133, 244);
+    text-align: center;
+    color: rgb(66, 133, 244);
+    font-size: 1.6rem;
+    cursor: pointer;
+    font-family:"Microsoft yahei";
+}
+
+.news_flash .loadmore{
+    width: 10rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    margin:0 auto 2.5rem;
+    font-size: 1.3rem;
+}
+
+/*右边盒子*/
+/*顶部广告*/
+.main_right_box>.ad_box>.ad_img_box a{
+    display: block;
+    width: 24rem;
+    height: 15rem;
+    background-size: cover;
+    border-radius: 4px 4px 4px 4px;
+    overflow: hidden;
+}
+
+.top_ad{
+    background:url("../images/ad_img.PNG") no-repeat;
+}
+
+.mid_ad{
+    background:url("../images/ad_img02.PNG") no-repeat;
+}
+
+/*24小时快讯*/
+.main_right_box h3{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: rgb(61, 70, 77);
+    margin: 4rem auto 1.6rem;
+    padding: 1.5rem 0px;
+    text-align: center;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: rgb(66, 133, 244);
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: rgb(230, 232, 235);
+}
+
+.main_right_box h3 span{
+    display: inline-block;
+    padding: 0px 0.5rem 0px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.news_flash li{
+    padding: 0px 0px 1.25rem 1.6rem;
+    position: relative;
+}
+
+.news_flash li .triangle{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255) rgb(255, 255, 255) rgb(255, 255, 255) rgb(66, 133, 244);
+    -webkit-transform-origin: 25% 50%;
+    transform-origin: 25% center 0px;
+    border-width: 4px;
+}
+
+.news_flash li h4{
+    margin: 0px 0px 0.05rem;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: rgb(204, 206, 207);
+}
+
+.news_flash li h4 .title{
+    color: rgb(61, 70, 77);
+    cursor: pointer;
+}
+
+.news_flash li h4 .title:hover{
+    color: rgb(54, 109, 240);
+}
+
+/*神评论*/
+.best_comment li{
+    padding-bottom: 0.5rem;
+}
+
+.best_comment li .infobox:hover .comment_con .fast_comment {
+    display: block;
+}
+
+.best_comment li .infobox .comment_con{
+    color: rgb(61, 70, 77);
+    margin-top: 1rem;
+    padding: 1rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position: relative;
+    background-color: rgb(241, 241, 241);
+}
+
+.best_comment li .infobox .comment_con .comment_inner{
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    line-height: 2em;
+    max-height: 6em;
+    font-size: 13px;
+}
+
+.best_comment li .infobox .comment_con .fast_comment{
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.701961);
+}
+
+.best_comment li .infobox .comment_con .fast_comment span{
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 5px 15px;
+    color: rgb(255, 255, 255);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: rgb(66, 133, 244);
+}
+
+.best_comment li .source{
+    margin: 0.5rem 0px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    line-height: 1.5em;
+    max-height: 1.5em;
+    color: rgb(153, 153, 153);
+}
+
+.best_comment li .source b{
+    font-weight: 400;
+    padding: 0px 0.25rem 0px 0px;
+}
+
+.best_comment li .source a{
+    color: rgb(153, 153, 153);
+    text-decoration: underline;
+}
+
+.best_comment li .img_box{
+    text-align: right;
+}
+
+.best_comment li .img_box span{
+    vertical-align: middle;
+    font-size: 1.25rem;
+    padding-top: 0.2rem;
+    display: inline-block;
+}
+
+.best_comment li .img_box span img{
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.best_comment li .img_box .name{
+    word-wrap: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0px 0.3rem;
+    display: inline-block;
+    max-width: 5rem;
+}
+
+/*最受关注公司*/
+.best_company .img_box{
+    float: left;
+    width:5.5rem;
+    height: 5.5rem;
+    border: 1px solid rgb(241, 241, 241);
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.best_company .img_box img{
+    width: 100%;
+    height: 100%;
+}
+
+.best_company li{
+    position: relative;
+    margin-bottom: 1.6rem;
+}
+
+.best_company .info_box{
+    margin-left: 7rem;
+    word-break: break-all;
+}
+
+.best_company .info_box h4{
+    font-size: 1.4rem;
+    margin: 0px;
+    padding: 0.05rem 0px;
+    line-height: 1.2;
+    font-weight: 400;
+    height: 20px;
+    display: block;
+    word-wrap: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.best_company .info_box h4 a{
+    font-weight: 600;
+    color: rgb(61, 70, 77);
+}
+
+.best_company .info_box .abstract{
+    margin-bottom: 0.5rem;
+    max-height: 3.5rem;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    line-height: 1.4;
+    color: rgb(153, 153, 153);
+}
+
+.best_company .info_box .round_price{
+    color: rgb(61, 70, 77);
+    font-size: 1rem;
+}
+
+.best_company .info_box .round_price .space_line{
+    color: rgb(195, 195, 195);
+    padding: 0px 0.5rem;
+}
+
+.kr_tag{
+    border: 1px solid rgb(104, 114, 125);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: rgb(104, 114, 125);
+    display: inline-block;
+    padding: 0px 15px;
+    height: 26px;
+    line-height: 24px;
+}
+
+.hot_tag a{
+    margin:0.2rem;
+}
+
+.hot_link a{
+    margin-bottom: 1.25rem;
+    max-width: 8rem;
+    display: block;
+    word-wrap: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    float: left;
+    margin-right: 1.25rem;
+    text-decoration: underline;
+    color: rgb(104, 114, 125);
+}

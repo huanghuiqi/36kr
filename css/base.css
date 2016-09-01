@@ -1,0 +1,68 @@
+/*全局的公共样式---css重置*/
+body{
+    font-family: "Microsoft yahei";
+}
+/*去除所有元素的默认间距和边距*/
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    /*font-family: "Microsoft YaHei",sans-serif;*/
+    /*让容器在计算宽度的时候，从边框位置开始计算*/
+    box-sizing: border-box;
+    /*去除在移动端特有的点击时的高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+}
+
+/*超链接*/
+a{
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+    text-decoration: none;
+    color: #333;
+}
+ul{
+    list-style: none;
+}
+body{
+    font-size: 14px;
+    color: #333;
+}
+
+input{
+    /*去除选择之后默认的外部边效果*/
+    outline: none;
+    /*去除input控件的不同浏览器添加的默认样式*/
+    -webkit-appearance:none;
+}
+
+/*去除浮动*/
+.clearfix::before,
+.clearfix::after
+{
+    content: "";
+    clear: both;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    display: block;
+}
+
+.f_l{
+    float: left;
+}
+
+.f_r{
+    float: right;
+}
+
+.m_l{
+    margin-left: 10px;
+}
+
+.m_r{
+    margin-right: 10px;
+}
