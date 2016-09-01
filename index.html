@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <title>36氪_为创业者提供最好的产品和服务</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/36kr.css"/>
+</head>
+<body>
+<!--导航栏-->
+<nav class="navbar kr36-default">
+    <div class="navbar-wrap">
+        <div class="navbar-wrap-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">创投资讯<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">7×24h 快讯</a></li>
+                    <li><a href="#">股权投资</a></li>
+                    <li><a href="#">融资</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我是创业者<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我是投资人<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">发现<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">搜索</a></li>
+                    <li><a href="#">客户端</a></li>
+                    <li><a href="#">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<!--导航栏结束-->
+
+<!--主体部分-->
+<div class="main">
+    <div class="main_box">
+        <!--左边盒子-->
+        <div class="main_left_box">
+            <div class="left_box_wrap">
+                <div class="content_wrapper">
+                    <!--左边：轮播图-->
+                    <div class="high_banner">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators"> </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox"></div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!--左边：新闻评论-->
+                    <div class="editor_recommend hidden-xs">
+                        <ul class="clearfix" id="recommend_model"></ul>
+                    </div>
+                    <!--左边：新闻列表-->
+                    <div class="list_con">
+                        <div class="list_content">
+                            <!--滚屏时的活动导航栏-->
+                            <div class="scroll-nav">
+                                <ul class="clearfix">
+                                    <li class="active"><a href="javascript:;">最新文章</a></li>
+                                    <li><a href="javascript:;">早期项目</a></li>
+                                    <li><a href="javascript:;">B轮后</a></li>
+                                    <li><a href="javascript:;">大公司</a></li>
+                                    <li><a href="javascript:;">资本</a></li>
+                                    <li><a href="javascript:;">深度</a></li>
+                                    <li><a href="javascript:;">研究</a></li>
+                                </ul>
+                            </div>
+                            <!--列表内容-->
+                            <div class="news-list" dataNum=0>
+                                <ul></ul>
+                                <div class="loadmore" id="news-list_vm">浏览更多</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--右边盒子-->
+        <div class="main_right_box hidden-xs">
+            <!--顶部广告-->
+            <div class="ad_box">
+                <div class="ad_img_box top_ad">
+                    <a href="javascript:;"></a>
+                </div>
+            </div>
+            <!--24小时快讯-->
+            <div class="news_flash" dataNum=0>
+                <h3><span>7×24h 快讯</span></h3>
+                <ul></ul>
+                <div class="loadmore" id="news_flash_vm">浏览更多</div>
+            </div>
+            <!--中部广告-->
+            <div class="ad_box">
+                <div class="ad_img_box mid_ad">
+                    <a href="javascript:;"></a>
+                </div>
+            </div>
+            <!--神评论-->
+            <div class="best_comment">
+                <h3><span>神评论</span></h3>
+                <ul id="bestComment_tmp"></ul>
+            </div>
+            <!--最受关注公司-->
+            <div class="best_company">
+                <h3>
+                    <span>最受关注公司</span>
+                </h3>
+                <ul id="bestCompany_tmp"></ul>
+            </div>
+            <!--入驻信息-->
+            <div class="join_us">
+                <h4>入驻36氪，你将获得</h4>
+                <div class="inner_box"></div>
+                <a href="javascript:;" class="btn_box"></a>
+            </div>
+            <!--热点标签-->
+            <div class="hot_tag">
+                <h3>
+                    <span>热点标签</span>
+                </h3>
+                <div class="inner_con">
+                    <a href="javascript:;" class="kr_tag">增强现实</a>
+                    <a href="javascript:;" class="kr_tag">众筹网站</a>
+                    <a href="javascript:;" class="kr_tag">虚拟现实</a>
+                    <a href="javascript:;" class="kr_tag">股权激励</a>
+                    <a href="javascript:;" class="kr_tag">自主创业</a>
+                    <a href="javascript:;" class="kr_tag">创业指导</a>
+                    <a href="javascript:;" class="kr_tag">社群营销</a>
+                    <a href="javascript:;" class="kr_tag">动视暴雪</a>
+                    <a href="javascript:;" class="kr_tag">无人驾驶</a>
+                    <a href="javascript:;" class="kr_tag">互联网金融模式</a>
+                </div>
+            </div>
+            <!--热点链接-->
+            <div class="hot_link">
+                <h3>
+                    <span>热点链接</span>
+                </h3>
+                <div class="inner_con">
+                    <a href="javascript:;">更美</a>
+                    <a href="javascript:;">Magic Leap</a>
+                    <a href="javascript:;">全息投影</a>
+                    <a href="javascript:;">乔布斯的死亡真相</a>
+                    <a href="javascript:;">不要小看3Dtouch</a>
+                    <a href="javascript:;">5G物联网</a>
+                    <a href="javascript:;">区块链</a>
+                    <a href="javascript:;">标天下</a>
+                    <a href="javascript:;">Kindle Oasis</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--主体结束-->
+
+<!--尾部-->
+<!--<footer class="common-footer">-->
+    <!--<div class="sections">-->
+        <!--<section class="link-section"><h3><img src="http://sta.36krcnd.com/common-module/common-header/images/logo.png"-->
+                                               <!--height="16px" style="position: relative;top: 1px;margin-right: 10px;"-->
+                                               <!--alt="36氪"> 让创业更简单 </h3>-->
+
+            <!--<div class="links"><a href="http://36kr.com/pages/about" rel="nofollow">关于36氪</a> | <a-->
+                    <!--href="http://krspace.cn/" rel="nofollow">氪空间</a> | <a href="http://36kr.com/pages/hire"-->
+                                                                          <!--rel="nofollow">加入我们</a> | <a-->
+                    <!--href="http://report.36kr.com/" rel="nofollow">寻求报道</a> <span id="clientDownload"> | <a-->
+                    <!--href="http://download.36kr.com/" rel="nofollow">客户端下载</a></span></div>-->
+            <!--<div class="feedback"> 反馈建议：<a href="mailto:service@36kr.com">service@36kr.com</a></div>-->
+            <!--<div class="contact"> 客服电话：<a href="tel:400-995-3636">400-995-3636</a></div>-->
+            <!--<div class="worktime"> 工作时间：周一到周五 10:00-19:00</div>-->
+        <!--</section>-->
+        <!--<section class="partner-section"><h3>合作伙伴</h3> &lt;!&ndash;设计需求：这里每个图标需要单独处理样式&ndash;&gt;-->
+            <!--<ul class="footer-partner">-->
+                <!--<li><a href="http://www.aliyun.com/" rel="nofollow" class="external" target="_blank"> <img-->
+                        <!--src="http://sta.36krcnd.com/36krhome-dev/images/logos/aly.png" height="16px" alt="阿里云"></a></li>-->
+                <!--<li><a href="http://qcloud.com/" rel="nofollow" class="external" target="_blank"> <img-->
+                        <!--src="http://sta.36krcnd.com/36krhome-dev/images/logos/txyun.png" height="18px" alt="腾讯云"></a>-->
+                <!--</li>-->
+                <!--<li><a href="http://getui.com/" rel="nofollow" class="external" target="_blank"> <img-->
+                        <!--src="http://sta.36krcnd.com/36krhome-dev/images/logos/getui.png" height="20px" alt="个推"></a>-->
+                <!--</li>-->
+                <!--<li><a href="http://www.yunpian.com/?ref=36Krx2015" rel="nofollow" class="external" target="_blank">-->
+                    <!--<img src="http://sta.36krcnd.com/36krhome-dev/images/logos/yp.png" height="17px" alt="云片网络"></a>-->
+                <!--</li>-->
+                <!--<li><a href="http://upyun.com/" rel="nofollow" class="external" target="_blank"> <img-->
+                        <!--src="http://sta.36krcnd.com/36krhome-dev/images/logos/upy.png" height="11px" alt="又拍云"></a></li>-->
+                <!--<li><a href="http://qiniu.com/" rel="nofollow" class="external" target="_blank"> <img-->
+                        <!--src="http://sta.36krcnd.com/36krhome-dev/images/logos/qny.png" height="17px" alt="七牛云存储"></a>-->
+                <!--</li>-->
+                <!--<li><a href="http://www.teambition.com/" rel="nofollow" class="external" target="_blank"> <img-->
+                        <!--src="http://sta.36krcnd.com/36krhome-dev/images/logos/teambition.png" height="18px"-->
+                        <!--alt="teambition"></a></li>-->
+                <!--<li><a href="http://dnspod.cn/" rel="nofollow" class="external" target="_blank"> <img-->
+                        <!--src="http://sta.36krcnd.com/36krhome-dev/images/logos/dp.png" height="10px" alt="dnspod"></a>-->
+                <!--</li>-->
+                <!--<li><a href="http://www.umeng.com/" rel="nofollow" class="external" target="_blank"> <img-->
+                        <!--src="http://sta.36krcnd.com/36krhome-dev/images/logos/umeng.png" height="22px" alt="友盟+"></a>-->
+                <!--</li>-->
+                <!--<li><a href="http://www.rongcloud.cn/" rel="nofollow" class="external" target="_blank"> <img-->
+                        <!--src="http://sta.36krcnd.com/36krhome-dev/images/logos/rongyun.png" height="20px" alt="融云"></a>-->
+                <!--</li>-->
+                <!--<li><a href="https://www.sensorsdata.cn/" rel="nofollow" class="external" target="_blank"> <img-->
+                        <!--src="http://sta.36krcnd.com/36krhome-dev/images/logos/shence.png" height="20px" alt="神策"></a>-->
+                <!--</li>-->
+                <!--<li><a href="http://qiyukf.com/" rel="nofollow" class="external" target="_blank"> <img-->
+                        <!--src="http://sta.36krcnd.com/36krhome-dev/images/logos/wyqiyu.png" height="18px" alt="网易七鱼"></a>-->
+                <!--</li>-->
+                <!--<li><a href="http://netease.im/" rel="nofollow" class="external" target="_blank"> <img-->
+                        <!--src="http://sta.36krcnd.com/36krhome-dev/images/logos/wyyunxin.png" height="18px"-->
+                        <!--alt="网易云信"></a></li>-->
+            <!--</ul>-->
+        <!--</section>-->
+        <!--<section class="qr-section"><img class="qr" src="http://sta.36krcnd.com/36krhome-dev/images/qr.png"-->
+                                         <!--alt="微信公众平台">-->
+
+            <!--<div>扫码关注微信公众平台</div>-->
+        <!--</section>-->
+    <!--</div>-->
+    <!--<div class="bottom">-->
+        <!--<div class="container">-->
+            <!--<div class="copyright"><span class="mobile-hide">本站由 <a href="http://www.aliyun.com/" rel="nofollow"-->
+                                                                    <!--target="_blank"><img-->
+                    <!--src="http://sta.36krcnd.com/36krhome-dev/images/logos/aliyunfooter.png" alt="阿里云"-->
+                    <!--style="height: 12px;vertical-align: middle;margin-right: -10px;margin-left: 10px;position: relative;top: -2px;"></a> </span>-->
+                <!--<span class="law">© 2011~2016 36氪 |  京ICP备12031756号 | 京ICP证150143号 <span class="mobile-hide">|  <a-->
+                        <!--href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020581"-->
+                        <!--target="_blank">京公网安备11010802020581号</a></span></span>-->
+                <!--&lt;!&ndash;<a  key ="56f38aa4efbfb06a875c40c6" class="safe-logo"  logo_size="83x30"  logo_type="official"  href="http://www.anquan.org" ><script src="https://static.anquan.org/static/outer/js/aq_auth.js"></script></a>&ndash;&gt;-->
+                <!--<a class="safe-logo"-->
+                   <!--href="http://v.pinpaibao.com.cn/authenticate/cert/?site=www.36kr.com&amp;at=official"-->
+                   <!--target="_blank"> <img src="http://static.anquan.org/static/outer/image/gw_83x30.png" alt="品牌宝"> </a>-->
+                <!--<br></div>-->
+            <!--<div class="share"><a class="iconfooter-weibo" href="http://weibo.com/wow36kr" rel="nofollow"></a> <a-->
+                    <!--class="iconfooter-twitter" href="https://twitter.com/36kr" rel="nofollow"></a> <a-->
+                    <!--class="iconfooter-facebook" href="http://www.facebook.com/X36Kr" rel="nofollow"></a> <a-->
+                    <!--class="iconfooter-rss" href="http://36kr.com/feed" rel="nofollow"></a></div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</footer>-->
+
+<!--尾部结束-->
+
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/html5shiv/html5shiv.js"></script>
+<script src="lib/respond/respond.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="lib/template/underscore-min.js"></script>
+<script src="js/template_vm.js"></script>
+
+</body>
+</html>
+<!--模板文件-->
+<!--轮播图模板-->
+<script id="template_banner" type="text/template">
+    <%_.each(arr,function(item,i){%>
+    <div class="item <%=i==0?'active':''%>">
+        <a href="javascript:;">
+            <img src="<%=item.path%>" alt="">
+        </a>
+    </div>
+    <%})%>
+</script>
+<!--轮播图点模板-->
+<script id="template_indicator" type="text/template">
+    <%_.each(arr,function(item,i){%>
+    <li data-target="#carousel-example-generic" data-slide-to="<%=i%>" class="<%=i==0?'active':''%>"></li>
+    <%})%>
+</script>
+<!--评论模块模板-->
+<script id="template_recommend" type="text/template">
+    <%_.each(arr,function(item,i){%>
+    <li>
+        <div class="space_cell"></div>
+        <a href="javascript:;">
+            <img src="<%=item.image_path%>" alt="">
+        </a>
+        <div class="editor_recommend_info">
+            <a href="javascript:;">
+                <span><%=item.text%></span>
+            </a>
+        </div>
+    </li>
+    <%})%>
+</script>
+<!--新闻列表模块-->
+<script id="template_newsList" type="text/template">
+    <%_.each(arr,function(item,i){%>
+    <li>
+        <div class="innerli clearfix">
+            <div class="img_box">
+                <span><%=item.tag%></span>
+                <a href="javascript:;">
+                    <img src="<%=item.imagPath%>">
+                </a>
+            </div>
+            <div class="intro">
+                <a href="javascript:;" class="title"><%=item.newsText%></a>
+                <div class="extra"><%=item.extraText%></div>
+                <div class="editor">文/<a href="javascript:;"><%=item.editor%></a> ·<%=item.time%></div>
+            </div>
+        </div>
+    </li>
+    <%})%>
+</script>
+<!--24小时快讯-->
+<script id="template_newsFlash" type="text/template">
+    <%_.each(arr,function(item,i){%>
+    <li class="news_flash_wrapper">
+        <span class="triangle"></span>
+        <div class="con">
+            <h4>
+                <span class="title"><%=item.newsTitle%></span>
+                <div>
+                    <span class="time"><%=item.time%></span>
+                </div>
+            </h4>
+        </div>
+    </li>
+    <%})%>
+</script>
+<!--神评论-->
+<script id="template_bestComment" type="text/template">
+    <%_.each(arr,function(item,i){%>
+    <li>
+        <div class="infobox">
+            <div class="comment_con">
+                <div class="comment_inner"><%=item.comment%></div>
+                <a href="javascript:;" class="fast_comment">
+                    <span>参与评论</span>
+                </a>
+            </div>
+        </div>
+        <div class="source">
+                            <span>
+                                <b>来源:</b>
+                                <a href="javascript:;"><%=item.source%></a>
+                            </span>
+        </div>
+        <div class="img_box">
+                            <span>
+                                <img src="<%=item.imgsrc%>"/>
+                            </span>
+                            <span class="name">
+                                <span><%=item.name%></span>
+                            </span>
+                            <span class="time">
+                                <span><%=item.time%></span>
+                            </span>
+        </div>
+    </li>
+    <%})%>
+</script>
+<!--最受关注公司-->
+<script id="template_bestCompany" type="text/template">
+    <%_.each(arr,function(item,i){%>
+    <li>
+        <div>
+            <div class="img_box">
+                <a href="javascript">
+                    <img src="<%=item.imgsrc%>"/>
+                </a>
+            </div>
+            <div class="info_box">
+                <h4>
+                    <a href="javascript:;"><%=item.comy_name%></a>
+                </h4>
+                <div class="abstract"><%=item.abstract%></div>
+                <div class="round_price">
+                    <span class="phase"><%=item.phase%></span>
+                    <span class="space_line">|</span>
+                    <span><%=item.price%></span>
+                </div>
+            </div>
+        </div>
+    </li>
+    <%})%>
+</script>
